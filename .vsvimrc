@@ -1,0 +1,28 @@
+set relativenumber                      " relative line numbers
+set backspace=indent,eol,start          " allow backspacing over everything in insert mode (including automatically inserted indentation, line breaks and start of insert)
+set incsearch                           " search as characters are entered
+set ignorecase                          " ignore case when searching
+set smartcase                           " ignore case when searching lowercase, but not when searching with uppercase
+set scrolloff=5                         " keep 5 lines above and below the cursor
+let mapleader=" "
+
+map gi :vsc Edit.GoToImplementation<CR>
+map gr :vsc Edit.FindAllReferences<CR>
+map ge :vsc Edit.GoToNextLocation<CR>
+map ca :vsc View.ShowSmartTag<CR>
+nmap <C-O> :vsc View.NavigateBackward<CR>
+nmap <C-I> :vsc View.NavigateForward<CR>
+vmap <C-O> :vsc View.NavigateBackward<CR>
+vmap <C-I> :vsc View.NavigateForward<CR>
+map <Leader>t :vsc TestExplorer.ShowTestExplorer<CR>
+map <Leader>g :vsc Team.Git.GoToGitChanges<CR>
+nmap <Leader>e :vsc View.SolutionExplorer<CR> :vsc SolutionExplorer.SyncWithActiveDocument<CR>
+map <Leader>q :vsc Window.Close<CR>
+nnoremap <leader>gf :vsc File.OpenContainingFolder<CR>
+nnoremap <leader>rs :source c:\Users\AivarsSkridulis\.vsvimrc<CR>
+nnoremap <leader>es :edit c:\Users\AivarsSkridulis\.vsvimrc<CR>
+nnoremap <C-D> <C-D>zz
+nnoremap <C-U> <C-U>zz
+map <Leader>l :set relativenumber!<CR>
+" Splits
+nmap <leader>v :vsplit<CR>

@@ -1,0 +1,101 @@
+
+{
+  "workbench.settings.editor": "json",
+  "editor.fontFamily": "'JetBrains Mono', 'MesloLGL NF', 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 21,
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "editor.renderLineHighlight": "all",
+  "workbench.colorCustomizations": {
+    // "editor.lineHighlightBackground": "#ebeef3",
+    "editorLineNumber.activeForeground": "#fbff00",
+    "coverageGutter.coveredColor": "#054b16", // Green for covered lines
+    "coverageGutter.partiallyCoveredColor": "#FFFF00", // Yellow for partially covered lines
+    "coverageGutter.uncoveredColor": "#FF0000" // Red for uncovered lines
+  },
+  "[azure-pipelines]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "csharp.experimental.debug.hotReload": true,
+  "extensions.ignoreRecommendations": true,
+  //ignore search for build outputs
+  "search.exclude": {
+    "**/bin": true,
+    "**/obj": true
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "q"],
+      "commands": [":q!"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": [":w"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] }
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.handleKeys": {
+    //"<C-a>": false,
+    "<C-f>": false
+  },
+  "vim.autoindent": true,
+  "vim.smartRelativeLine": true,
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
+  "vim.highlightedyank.enable": true,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "workbench.colorTheme": "Default Dark+",
+  "editor.minimap.enabled": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.openRepositoryInParentFolders": "never",
+  "editor.inlineSuggest.enabled": true,
+  "breadcrumbs.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.menuBarVisibility": "compact",
+  "bicep.enableSurveys": false,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "cSpell.userWords": ["appsettings", "Pdfs", "Webjob"],
+  "mssql.enableRichExperiencesDoNotShowPrompt": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "html.format.wrapLineLength": 0,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
+}
